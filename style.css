@@ -1,0 +1,227 @@
+:root {
+  --color-0: rgb(255, 255, 255);
+  --color-1: rgb(255, 194, 68);
+  --color-2: rgb(0, 132, 107);
+  --color-3: rgb(29, 29, 29);
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+  margin: 0px;
+  padding: 0%;
+  font-family: Rubik;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-1);
+  height: 108px;
+  padding: 30px 120px;
+}
+.logonav {
+  width: 119px;
+  height: 40px;
+}
+nav > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  background-color: var(--color-2);
+  color: var(--color-0);
+  font-family: Arial, Helvetica, sans-serif;
+  width: 120px;
+  height: 20px;
+  padding: 15px 25px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+nav > a:hover {
+  transform: scale(1.1);
+}
+
+main > .article1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
+  background-color: var(--color-1);
+  gap: 40px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+.parrafo1 > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+}
+.filtro1 > div > img {
+  background-color: var(--color-0);
+  border-radius: 100%;
+  width: 70px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.filtro1 > div > img:hover {
+  transform: scale(1.1);
+}
+.filtro1 {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.filtro1 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filtro1 > div > h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+.filtro2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 24px;
+}
+.filtro2 > p {
+  background-color: gainsboro;
+  border-radius: 60px;
+  padding: 5px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mostrador {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+.mostrador > div > img {
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+}
+.mostrador > div > h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.text1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  gap: 15px;
+}
+.text1 > img {
+  width: 35px;
+}
+.FA {
+  display: flex;
+  flex-direction: column;
+}
+.mostrador > h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+.filtro2 > button {
+  width: 160px;
+  background-color: var(--color-2);
+  color: var(--color-0);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 60px;
+  padding: 10px 20px;
+  border-style: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.filtro2 > button:hover {
+  transform: scale(1.1);
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mostrador > div {
+  gap: 20px;
+}
+.mostrador > div {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.mostrador > div:hover {
+  transform: scale(1.1);
+}
+.FG > h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
+  background-color: var(--color-3);
+  margin-top: 50px;
+  color: var(--color-0);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 70px;
+}
+.filtro2 > input {
+  width: 160px;
+  background-color: var(--color-0);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 60px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 10px;
+  border-color: var(--color-2);
+}
+
+/* media queries */
+
+@media screen and (max-width: 620px) {
+  .parrafo1 > p {
+    font-size: 25px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  footer > p {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 418px) {
+  .mostrador > div > img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .parrafo1 > p {
+    font-size: 20px;
+  }
+}
